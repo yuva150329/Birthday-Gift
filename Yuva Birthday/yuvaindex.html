@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Yuva Mahh</title>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+/* Background */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background-image: url('https://i.pinimg.com/736x/ef/a3/0f/efa30fd78b934d5afae1e29c6484f9ec.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Card */
+.card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(2px);
+padding:30px;
+border-radius:15px;
+width:90%;
+max-width:400px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Title */
+ h1 {
+      font-family: 'Patrick Hand', cursive;
+      font-weight: 700;
+      font-size: 36px;
+      margin-bottom: 10px;
+       color: white;
+  text-shadow:
+    2px 2px 0 #3f51b5,
+    -2px -2px 0 #03a9f4;
+    }
+
+/* Message */
+p{
+font-size:15px;
+margin-bottom:20px;
+color: #38b078;
+text-shadow: 
+1px 1px 0 #000000;
+}
+
+/* Button */
+button{
+padding:12px 25px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:blue;
+color:white;
+cursor:pointer;
+transition:0.3s;
+text-decoration: underline;
+}
+
+button:hover{
+background:red;
+}
+
+a{
+  padding:12px 25px;
+font-size:16px;
+border:none;
+border-radius:25px;
+background:blue;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+a:hover{
+  background: red;
+}
+
+/* Mobile Responsive */
+@media(max-width:480px){
+h1{
+font-size:26px;
+}
+p{
+font-size:18px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1> Happy Birthday Yuva Mahh</h1>
+<p>(Enjoy Your Day,Innaki Mathiriye Nee Eppovum Happy Irrukanum Mahh,Marrakama 2 Times Mattum Cilck For Pop Button Click Panni Paru Okey Athuku Apram Surprise Pakkalam)</p>
+
+<button onclick="startCelebration()">Cilck for pop </button>
+<a href="surprise.html">Cilck for surprise</a>
+</div>
+
+
+<!-- Confetti Library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+
+function startCelebration(){
+
+confetti({
+particleCount:150,
+spread:70,
+origin:{y:0.6}
+});
+
+setTimeout(()=>{
+confetti({
+particleCount:200,
+spread:120
+});
+},500);
+
+}
+
+</script>
+
+</body>
+</html>
